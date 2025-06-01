@@ -11,10 +11,15 @@ public class IntegerMap {
             mapList.put(arr[j], ++hashArr[arr[j]]);
 
         System.out.println(mapList);
+
+        // Playing with Map
+        System.out.println(mapList.get(4));
+        System.out.println(mapList.keySet());
+        System.out.println(mapList.values());
     }
 
     public static void main(String[] args) {
-        int arr[] = { 3, 1, 6, 4, 2, 2, 1, 1, 12 };
+        int arr[] = { 3, 1, 6, 4, 2, 2, 1, 1, 12, 12, 6 };
         mapInteger(arr);
     }
 }
