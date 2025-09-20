@@ -19,8 +19,19 @@ public class SetMatrix02 {
             }
         }
 
-        for (int i = 0; i < colArr.length; i++) {
-            System.out.println(rowArr[i] + "  " + colArr[i]);
+        for (int i = 0; i < row; i++) {
+            for (int j = 0; j < col; j++) {
+                if (rowArr[i] == 1 || colArr[j] == 1) {
+                    binArr[i][j] = 0;
+                }
+            }
+        }
+
+        for (int i = 0; i < row; i++) {
+            for (int j = 0; j < col; j++) {
+                System.out.print(binArr[i][j] + " ");
+            }
+            System.out.println();
         }
     }
 }
